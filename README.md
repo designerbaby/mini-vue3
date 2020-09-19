@@ -9,6 +9,7 @@
 - [ ] packages
     - [x] reactivity 响应式
     - [ ] compiler-core 编译主流程
+    - [ ] compiler-dom 编译dom
     - [ ] runtime-core 执行主流程
         - 初始化 
             - [ ] 流程
