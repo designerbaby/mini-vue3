@@ -6,9 +6,8 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
   </head>
   <body>
-    <div id='app'>
-      <button id="btn">click</button>
-    </div>
+    <div id='app'></div>
+    <button id="btn">click</button>
     <script src="./reactivity.js"></script>
     <script>
       const root = document.getElementById('app');
@@ -21,7 +20,7 @@
       let double = computed(() => obj.age * 2)
       effect(() => {
         root.innerHTML = `
-          <h1>${obj.name}今年${obj.age}岁，双倍是${double}.</h1>
+          <h1>${obj.name}今年${obj.age}岁，双倍是${double.value}.</h1>
         `
       })
       document.addEventListener('click', () => {
