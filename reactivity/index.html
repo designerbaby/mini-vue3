@@ -14,14 +14,14 @@
       const root = document.getElementById('app');
       const btn = document.getElementById('btn');
       const o = {
-        name: 'dqw',
+        name: 'ljn',
         age: 1
       }
       let obj = reactive(o)
       let double = computed(() => obj.age * 2)
       effect(() => {
         root.innerHTML = `
-          <h1>${obj.name}今年${obj.age}
+          <h1>${obj.name}今年${obj.age}岁，双倍是${double}.</h1>
         `
       })
       document.addEventListener('click', () => {
