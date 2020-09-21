@@ -6,6 +6,17 @@
 //   }
 // }
 
+// => 转化为
+// {
+//   o: {
+//     age: [() => {
+//       root.innerHTML = `
+//         <h1>${obj.name}今年${obj.age}岁，双倍是${double.value}.</h1>
+//       `
+//     }]
+//   }
+// }
+
 let targetMap = new WeakMap()
 let effectStack = [] // 存储effect
 function track(target, key) {
