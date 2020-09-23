@@ -1,5 +1,6 @@
 #### 1、vite源码原理：
-import xx from './a.js'，浏览器会发出一个网络请求。vite拦截这个请求，去做vue相关的编译，解析等，实现了按需加载的能力，不用打包，dev秒开，build走的是rollup。
+- (1)、新版的chrome浏览器支持直接import，浏览器import的时候只认识js文件
+- (2)、import xx from './a.js'，浏览器会发出一个网络请求。vite拦截这个请求，去做vue相关的编译，解析等，实现了按需加载的能力，不用打包，dev秒开，build走的是rollup。
 #### 2、vite源码实现：
 
 - 1、支持npm包的import
